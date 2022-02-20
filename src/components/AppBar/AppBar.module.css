@@ -1,0 +1,29 @@
+@import '../../assets/_variables.css';
+
+.header {
+  width: 100%;
+  background-color: var(--main-background-color);
+}
+
+.header__wrapper {
+  width: auto;
+  height: 56px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .header__wrapper {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header__wrapper {
+    padding-right: 44px;
+  }
+}

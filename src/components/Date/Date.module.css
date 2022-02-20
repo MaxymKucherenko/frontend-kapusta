@@ -1,0 +1,27 @@
+.dateContainer {
+  /* width: 104px; */
+  height: 40px;
+  display: flex;
+}
+
+.dateIcon {
+  background: url('./calendar.svg') center no-repeat;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.date {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+}
+
+@media screen and (min-width: 768px) {
+  .dateContainer {
+    margin-right: 33px;
+  }
+}

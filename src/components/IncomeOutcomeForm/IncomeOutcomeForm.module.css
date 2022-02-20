@@ -1,0 +1,374 @@
+@import '../../assets/_variables.css';
+
+.buttons {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  padding: 0;
+  background-color: #f5f6fb;
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: -1px -2px 5px rgba(170, 178, 197, 0.4);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 43px;
+}
+
+.nameLi,
+.dropdownLi {
+  width: 100%;
+}
+
+.nameField {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  height: 44px;
+  background-color: #f5f6fb;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  letter-spacing: 0.02em;
+  padding-left: 20px;
+}
+
+input::placeholder {
+  color: #c7ccdc;
+}
+
+.nameInput {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.categoryInput {
+  border-bottom-right-radius: 16px;
+  border-top: none;
+}
+
+.summInput {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-right: none;
+  width: 82px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  letter-spacing: 0.02em;
+  outline: none;
+  pointer-events: none;
+}
+
+.numberField {
+  pointer-events: none;
+}
+
+.summInputinput::-webkit-outer-spin-button,
+.summInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.summInput[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.summInput::placeholder {
+  color: black;
+}
+
+.summField {
+  margin-top: 30px;
+  width: 183px;
+}
+
+.summWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.summButton {
+  height: 44px;
+  width: 60px;
+  background: #f5f6fb;
+  border: 2px solid #ffffff;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background: url('./calculator.svg') center no-repeat #f5f6fb;
+  position: relative;
+}
+
+.summButton:active {
+  box-shadow: 1px 2px 5px rgba(3, 3, 3, 0.4);
+}
+
+.uah {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding-right: 15px;
+  color: black;
+  background: #f5f6fb;
+}
+
+.enterButton {
+  background-color: #ff751d;
+  color: #ffffff;
+  margin-right: 15px;
+  border-radius: 16px;
+  box-shadow: 1px 2px 5px rgba(170, 178, 197, 0.4);
+  width: 125px;
+  height: 44px;
+}
+
+.enterButton:active {
+  filter: drop-shadow(1px 3px 5px rgba(255, 107, 8, 0.35));
+}
+
+.clearButton {
+  border-radius: 16px;
+  box-shadow: 1px 2px 5px rgba(170, 178, 197, 0.4);
+  width: 125px;
+  height: 44px;
+}
+
+.summIcon {
+  fill: #1d2e4a;
+}
+
+.backButton {
+  background: url('./backArrow.svg') center no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.goBack {
+  width: 18px;
+  height: 12px;
+  opacity: 0;
+  font-size: 1px;
+}
+
+.categoriesRoot {
+  width: 100%;
+}
+
+.categoriesControll {
+  border-bottom-right-radius: 16px;
+  width: 100%;
+  height: 44px;
+  background-color: #f5f6fb;
+  border-right: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-top: none;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  letter-spacing: 0.02em;
+  padding-left: 20px;
+  padding-top: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.categoriesArrow {
+  margin-top: 6px;
+  z-index: 1001;
+}
+
+.categoriesPlaceholder {
+  color: #c7ccdc;
+}
+
+.categoriesMenu {
+  width: 100%;
+  background-color: #f5f6fb;
+  border-right: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-top: none;
+  border-bottom-right-radius: 16px;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  letter-spacing: 0.02em;
+  padding-left: 10px;
+  padding-top: 6px;
+  box-shadow: 1px 2px 5px rgba(170, 178, 197, 0.4);
+  margin-top: -44px;
+}
+
+@media screen and (min-width: 768px) {
+  .categoriesMenu {
+    max-height: 371px;
+  }
+
+  .ul {
+    flex-direction: row;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+  }
+
+  .summField {
+    margin-top: 0;
+  }
+
+  .summButton {
+    border: 2px solid #f5f6fb;
+    background: url('./calculator.svg') center no-repeat #ffffff;
+    border-left: none;
+    width: 39px;
+  }
+
+  .uah {
+    display: none;
+  }
+
+  input {
+    border: 2px solid #f5f6fb;
+    background: #ffffff;
+  }
+
+  .categoriesControll {
+    background: #ffffff;
+    border: 2px solid #f5f6fb;
+    border-bottom-right-radius: 0;
+    padding-top: 10px;
+  }
+
+  .nameInput {
+    border-top-right-radius: 0;
+    border-right: none;
+  }
+
+  .summInput {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+    padding-left: 0;
+    width: 65px;
+
+    color: #c7ccdc;
+  }
+
+  .summWrapper {
+    width: 102px;
+  }
+
+  .form {
+    margin-top: 0;
+  }
+
+  .buttons {
+    margin-top: 0;
+    justify-content: start;
+    padding-left: 32px;
+  }
+
+  .nameLi,
+  .dropdownLi {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ul {
+    width: 601px;
+    margin-bottom: 0;
+  }
+
+  .buttons {
+    width: 265px;
+    margin-left: 20px;
+    padding-left: 0;
+  }
+
+  .categoriesRoot {
+    width: 188px;
+  }
+
+  .nameLi {
+    width: 289px;
+  }
+
+  .dropdownLi {
+    width: 188px;
+  }
+
+  .summField {
+    width: 123px;
+  }
+
+  .summWrapper {
+    width: 123px;
+  }
+
+  .summInput {
+    width: 100%;
+  }
+
+  .numberField {
+    width: 73px;
+  }
+
+  .summButton {
+    width: 49px;
+  }
+
+  .enterButton,
+  .clearButton {
+    width: 125px;
+  }
+}

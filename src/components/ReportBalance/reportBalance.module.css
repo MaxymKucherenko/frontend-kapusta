@@ -1,0 +1,59 @@
+.section_balance {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+
+  background-color: #fff;
+  color: #52555f;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.17;
+  box-shadow: 5px 10px 20px rgba(170, 178, 197, 0.4);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  min-height: 84px;
+  max-width: 280px;
+}
+.balance_item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.balance_item:last-child {
+  border-left: 1px solid #e0e5eb;
+}
+
+.balance_item_expense {
+  color: #e53935;
+}
+.balance_item_income {
+  color: #407946;
+}
+
+@media screen and (min-width: 768px) {
+  .section_balance {
+    /*  */
+    max-width: 668px;
+    border-radius: 30px;
+    min-height: 50px;
+    margin-bottom: 30px;
+  }
+  .balance_item {
+    display: flex;
+
+    padding: 15px 20px;
+  }
+  .balance_item_title {
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section_balance {
+    max-width: 1060px;
+  }
+}

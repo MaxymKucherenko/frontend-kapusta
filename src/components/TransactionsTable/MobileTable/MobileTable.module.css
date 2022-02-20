@@ -1,0 +1,105 @@
+.firstWrapper {
+  display: block;
+  min-width: 283px;
+  height: 42px;
+
+  border-bottom: 1px solid #f5f6fb;
+  margin-bottom: 10px;
+}
+
+.tsList__container {
+  width: 90%;
+  min-width: 283px;
+  height: 42px;
+
+  border-bottom: 1px solid #f5f6fb;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 100%; */
+}
+
+.listItem__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 148px;
+}
+
+.dateCategory__wrapper {
+  display: flex;
+}
+
+.listItem__subCategory {
+  display: inline-block;
+  height: 20px;
+  margin-bottom: 3px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+
+  align-items: center;
+  letter-spacing: 0.04em;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  color: #52555f;
+}
+.listItem__date {
+  margin-right: 20px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 9px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #52555f;
+}
+.listItem__category {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 9px;
+  letter-spacing: 0.04em;
+
+  color: #52555f;
+}
+
+.listItem__sumWrapper {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  padding-left: 10px;
+}
+
+.listItem__sum {
+  display: inline-flex;
+  min-width: 84px;
+  justify-content: flex-end;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: #407946;
+}
+
+.tdSumExpense {
+  color: #e7192e;
+}
+
+.buttonDelMobile {
+  border: none;
+  width: 40px;
+  padding: 16px;
+  background: url('../deleteIcon.svg') center no-repeat;
+}

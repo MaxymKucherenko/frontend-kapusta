@@ -1,0 +1,130 @@
+@import '../../assets/_variables.css';
+
+.balance_form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+}
+
+.balance_container {
+  display: flex;
+}
+
+.balance_text {
+  font-weight: 700;
+  color: rgba(82, 85, 95, 0.7);
+  margin-bottom: 6px;
+}
+
+.balance_input {
+  font-weight: bold;
+  width: 125px;
+  height: 44px;
+  padding-top: 3px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 22px 0px 0px 22px;
+  border: 2px solid var(--main-background-color);
+  background-color: transparent;
+}
+
+.balance_input_active {
+  font-weight: bold;
+  width: 125px;
+  height: 44px;
+  padding-top: 3px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 22px 0px 0px 22px;
+  border: 2px solid var(--main-background-color);
+  background-color: transparent;
+}
+
+.balance_input_report {
+  border-radius: 16px;
+}
+
+.balance_input::placeholder {
+  color: black;
+}
+
+.balance_input_active::placeholder {
+  color: black;
+}
+
+.balance_input_active:hover,
+.balance_input_active:focus {
+  border-color: var(--orange-background-color);
+}
+
+.balance_button {
+  cursor: auto;
+  font-weight: normal;
+  color: rgba(82, 85, 95, 0.7);
+  padding: 3px 0px 0px 0px;
+  width: 125px;
+  height: 44px;
+  box-sizing: border-box;
+  border-radius: 0px 22px 22px 0px;
+  border: 2px solid var(--main-background-color);
+  background-color: transparent;
+}
+
+.balance_button_active {
+  cursor: pointer;
+  font-weight: normal;
+  color: rgba(82, 85, 95, 0.7);
+  padding: 3px 0px 0px 0px;
+  width: 125px;
+  height: 44px;
+  box-sizing: border-box;
+  border-radius: 0px 22px 22px 0px;
+  border: 2px solid var(--main-background-color);
+  background-color: transparent;
+}
+
+.balance_button_active:hover,
+.balance_button_active:focus {
+  border-color: var(--orange-background-color);
+  background-color: var(--orange-background-color);
+  color: var(--main-background-color);
+}
+
+@media screen and (min-width: 768px) {
+  .balance_form {
+    flex-direction: row;
+  }
+
+  .balance_text {
+    margin-right: 21px;
+    margin-bottom: 0;
+  }
+
+  .balance_button {
+    border-radius: 16px;
+  }
+
+  .balance_input {
+    margin-right: 15px;
+    border-radius: 16px;
+  }
+
+  .balance_input_active {
+    margin-right: 15px;
+    border-radius: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .balance_form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

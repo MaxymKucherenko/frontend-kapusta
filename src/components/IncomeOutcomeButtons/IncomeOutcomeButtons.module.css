@@ -1,0 +1,61 @@
+.typeButton {
+  border-right: 2px solid #ffffff;
+}
+
+.typeLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.typeLink:visited {
+  text-decoration: none;
+}
+
+.typeButton + .typeButton {
+  border: none;
+}
+
+.incomeOutcomeButton {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .typeButton {
+    height: 53px;
+  }
+
+  .typeLink {
+    height: 100%;
+  }
+
+  .incomeOutcomeButtons {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .typeButton {
+    width: 159px;
+  }
+
+  .typeLink:focus {
+    background-color: #ff751d;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .typeButton {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 138px;
+  }
+
+  .typeButton.isActive {
+    background: #fefefe;
+    color: #ff751d;
+  }
+}

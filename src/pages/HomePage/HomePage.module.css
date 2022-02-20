@@ -1,0 +1,9 @@
+.loginWrapper {
+  margin-bottom: 191px;
+}
+
+@media screen and (min-width: 1280px) {
+  .loginWrapper {
+    margin-bottom: 0px;
+  }
+}

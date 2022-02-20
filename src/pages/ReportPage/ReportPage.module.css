@@ -1,0 +1,90 @@
+.container {
+  padding-top: 21px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.balance__style {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.button__balance {
+  display: none;
+}
+
+.button__back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: inherit;
+  width: auto;
+}
+
+.button__name {
+  display: none;
+}
+
+.date__description {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: rgba(82, 85, 95, 0.7);
+  text-align: center;
+}
+
+.datePicker__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 5px;
+}
+
+.datePicker__button {
+  border: none;
+  background-color: inherit;
+  width: auto;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
+
+  .button__back {
+    margin-left: 63px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 42px;
+  }
+
+  .button__name {
+    display: block;
+    margin-left: 18px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: rgba(82, 85, 95, 0.7);
+    text-align: center;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-top: 43px;
+  }
+
+  .button__balance {
+    display: block;
+  }
+}

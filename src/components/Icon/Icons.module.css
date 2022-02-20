@@ -1,0 +1,64 @@
+@import '../../assets/_variables.css';
+
+.logo-mobile {
+  width: 183px;
+  height: 46px;
+  margin-bottom: 5px;
+}
+
+.logo-tablet {
+  width: 307px;
+  height: 78px;
+  margin-bottom: 5px;
+}
+
+.logo {
+  width: 377px;
+  height: 120px;
+}
+
+.miniLogo {
+  display: block;
+  width: 90px;
+  height: 31px;
+}
+
+.logout {
+  width: 16px;
+  height: 16px;
+  fill: #cbccd0;
+}
+
+.logout:hover,
+.logout:focus {
+  fill: var(--orange-background-color);
+}
+
+.goArrow {
+  width: 18px;
+  height: 12px;
+  fill: var(--orange-background-color);
+}
+
+.leftArrow {
+  width: 7px;
+  height: 12px;
+  fill: none;
+}
+
+.rightArrow {
+  width: 7px;
+  height: 12px;
+  fill: none;
+}
+
+.goToReport {
+  width: 14px;
+  height: 14px;
+  fill: #52555f;
+}
+
+/* .goToReport:hover,
+.goToReport:focus {
+  fill: var(--orange-background-color);
+} */

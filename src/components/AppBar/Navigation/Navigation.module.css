@@ -1,0 +1,64 @@
+@import '../../../assets/_variables.css';
+
+.header_avatar {
+  background-image: url(../../../images/avatar_user.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin-right: 15px;
+  width: 32px;
+  height: 32px;
+}
+
+.header__logout_svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.header_logout_button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.header__control_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__login_name {
+  position: relative;
+}
+
+.header__logout_text {
+  color: black;
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .header__user_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+  }
+
+  .header__login_name::after {
+    content: url('./Vector\ 1.svg');
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: -20px;
+  }
+
+  .header_avatar {
+    margin-right: 10px;
+  }
+}
